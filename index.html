@@ -7,17 +7,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <style>
     :root {
-      --azul-cv: #003DA5;
-      --vermelho-cv: #EF3340;
-      --amarelo-cv: #FFD100;
+      --verde-principal: rgb(14, 132, 67);
+      --verde-escuro: rgb(10, 100, 50);
+      --vermelho-destaque: rgb(220, 53, 69);
+      --amarelo-acao: rgb(255, 193, 7);
       --branco: #FFFFFF;
       --cinza-claro: #f8f9fa;
-      --cinza-escuro: #333;
+      --cinza-escuro: #2c2c2c;
     }
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom, var(--azul-cv), #001f5f);
+      background: linear-gradient(to bottom, var(--verde-principal), var(--verde-escuro));
       color: var(--branco);
       min-height: 100vh;
       display: flex;
@@ -25,81 +26,85 @@
       align-items: center;
     }
     header {
-      background: var(--azul-cv);
+      background: var(--verde-principal);
       width: 100%;
-      padding: 2rem 1rem;
+      padding: 2.2rem 1rem;
       text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.35);
     }
     header h1 {
       margin: 0;
-      font-size: 2.2rem;
-      color: var(--amarelo-cv);
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+      font-size: 2.4rem;
+      color: var(--amarelo-acao);
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
     }
     .container {
-      max-width: 700px;
-      background: rgba(255,255,255,0.95);
+      max-width: 720px;
+      background: rgba(255,255,255,0.96);
       color: var(--cinza-escuro);
-      border-radius: 12px;
-      padding: 2.5rem;
-      margin: 2rem 1rem;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+      border-radius: 14px;
+      padding: 2.8rem;
+      margin: 2.5rem 1rem;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.28);
     }
     h2 {
-      color: var(--vermelho-cv);
-      border-bottom: 3px solid var(--amarelo-cv);
-      padding-bottom: 0.8rem;
-      margin-bottom: 1.5rem;
+      color: var(--vermelho-destaque);
+      border-bottom: 4px solid var(--amarelo-acao);
+      padding-bottom: 0.9rem;
+      margin-bottom: 1.8rem;
+      font-size: 1.8rem;
     }
     p, li {
-      line-height: 1.7;
-      font-size: 1.1rem;
+      line-height: 1.75;
+      font-size: 1.12rem;
     }
     .steps {
       background: var(--cinza-claro);
-      padding: 1.5rem;
-      border-radius: 10px;
-      margin: 1.5rem 0;
+      padding: 1.8rem;
+      border-radius: 12px;
+      margin: 1.8rem 0;
+      border-left: 5px solid var(--verde-principal);
     }
     .email-btn {
       display: inline-block;
-      background: var(--vermelho-cv);
+      background: var(--vermelho-destaque);
       color: white;
-      padding: 1rem 2rem;
-      font-size: 1.2rem;
+      padding: 1.1rem 2.4rem;
+      font-size: 1.25rem;
       border-radius: 50px;
       text-decoration: none;
-      margin: 1.5rem 0;
-      transition: all 0.3s;
-      box-shadow: 0 4px 15px rgba(239,51,64,0.4);
+      margin: 2rem 0;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 18px rgba(220,53,69,0.35);
     }
     .email-btn:hover {
-      background: #d32f2f;
-      transform: translateY(-3px);
-      box-shadow: 0 8px 25px rgba(239,51,64,0.5);
+      background: rgb(200, 35, 55);
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(220,53,69,0.5);
     }
     .email-btn i {
-      margin-right: 10px;
+      margin-right: 12px;
     }
     .note {
-      background: #fff3cd;
-      color: #856404;
-      padding: 1rem;
-      border-radius: 8px;
-      margin-top: 2rem;
-      font-size: 1rem;
+      background: #fff8e1;
+      color: #664d03;
+      padding: 1.2rem;
+      border-radius: 10px;
+      margin-top: 2.2rem;
+      font-size: 1.05rem;
+      border-left: 5px solid var(--amarelo-acao);
     }
     footer {
       margin-top: auto;
-      padding: 1.5rem;
+      padding: 2rem 1rem;
       text-align: center;
-      font-size: 0.9rem;
-      opacity: 0.9;
+      font-size: 0.95rem;
+      opacity: 0.92;
     }
     @media (max-width: 600px) {
-      .container { padding: 1.8rem; }
-      header h1 { font-size: 1.8rem; }
+      .container { padding: 2rem 1.5rem; }
+      header h1 { font-size: 2rem; }
+      h2 { font-size: 1.6rem; }
     }
   </style>
 </head>
@@ -107,7 +112,7 @@
 
   <header>
     <h1>Ativa Trabalho</h1>
-    <p style="margin: 0.5rem 0 0; font-size: 1.1rem; color: #e0e0ff;">Exclusão de Conta e Dados Pessoais</p>
+    <p style="margin: 0.6rem 0 0; font-size: 1.15rem; color: #e8f5e9;">Exclusão de Conta e Dados Pessoais</p>
   </header>
 
   <div class="container">
@@ -134,7 +139,8 @@
       <i class="fas fa-envelope"></i> Enviar pedido por email agora
     </a>
 
-   
+    <p><strong>Alternativa dentro do app:</strong> Abra o aplicativo Ativa Trabalho → vá a Configurações / Perfil → selecione "Eliminar conta". Confirme e a eliminação será processada automaticamente.</p>
+
     <div class="note">
       <strong>Nota importante:</strong> Após a exclusão, não será possível recuperar a conta ou os dados. Se tiver dúvidas, responda ao email de confirmação que enviaremos.
     </div>
